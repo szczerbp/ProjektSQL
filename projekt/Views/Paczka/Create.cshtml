@@ -1,0 +1,42 @@
+﻿@using projekt.Models
+@model Paczka
+
+<h2>Dodaj paczkę:</h2>
+<form method="post">
+    <table>
+        <tr>
+            <td>ID firmy:</td>
+            <td>
+                <input asp-for="FirmaId" />
+                <span asp-validation-for="FirmaId" class="text-danger"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>ID magazynu:</td>
+            <td>
+                <input asp-for="MagazynId" />
+                <span asp-validation-for="MagazynId" class="text-danger"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>Stan:</td>
+            <td>
+                <input asp-for="Stan" />
+                <span asp-validation-for="Stan" class="text-danger"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>
+                <input type="submit" value="Dodaj" />
+            </td>
+        </tr>
+    </table>
+</form>
+
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+    }
+

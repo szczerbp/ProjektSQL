@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Firma>
+@using projekt.Models
+
+<h2>Lista firm:</h2>
+
+<div class="row pt-4">
+    <div class="col-6">
+    </div>
+    <div class="col-6 text-end">
+        <a asp-controller="Firma" asp-action="Create" class="btn btn-primary">
+            Dodaj firmę
+        </a>
+    </div>
+</div>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>
+                Nazwa
+            </th>
+            <th>
+                NIP
+            </th>
+            <th>
+                ID
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var obj in Model)
+        {
+            <tr>
+                <td>
+                    @obj.Nazwa
+                </td>
+                <td>
+                    @obj.NIP
+                </td>
+                <td>
+                    @obj.Id
+                </td>
+                <td style="width:12%">
+                    <a asp-controller="Firma" asp-action="Edit" asp-route-Id=@obj.Id>
+                        <button type="button" class="btn btn-info">Edytuj</button>
+                    </a>
+                    <a asp-controller="Firma" asp-action="Delete" asp-route-Id=@obj.Id>
+                        <button type="button" class="btn btn-warning">Usuń</button>
+                    </a>
+                </td>
+            </tr>
+        }
+
+    </tbody>
+</table>
+
+

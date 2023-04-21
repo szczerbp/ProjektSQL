@@ -1,0 +1,57 @@
+﻿@model IEnumerable<WozekWidlowy>
+@using projekt.Models
+
+<h2>Lista wózków:</h2>
+
+<div class="row pt-4">
+    <div class="col-6">
+    </div>
+    <div class="col-6 text-end">
+        <a asp-controller="WozekWidlowy" asp-action="Create" class="btn btn-primary">
+            Dodaj wózek
+        </a>
+    </div>
+</div>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>
+                Data ostatniego serwisu
+            </th>
+            <th>
+                ID magazynu
+            </th>
+            <th>
+                ID wózka
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var obj in Model)
+        {
+            <tr>
+                <td>
+                    @obj.DataOstatniegoSerwisu
+                </td>
+                <td>
+                    @obj.MagazynId
+                </td>
+                <td>
+                    @obj.Id
+                </td>
+                <td style="width:12%">
+                    <a asp-controller="WozekWidlowy" asp-action="Edit" asp-route-Id=@obj.Id>
+                        <button type="button" class="btn btn-info">Edytuj</button>
+                    </a>
+                    <a asp-controller="WozekWidlowy" asp-action="Delete" asp-route-Id=@obj.Id>
+                        <button type="button" class="btn btn-warning">Usuń</button>
+                    </a>
+                </td>
+            </tr>
+        }
+
+    </tbody>
+</table>
+
+

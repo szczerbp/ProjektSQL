@@ -1,0 +1,108 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = projekt
+build_property.RootNamespace = projekt
+build_property.ProjectDir = E:\zzzz STUDIA\sem6\projektSQL\wersja_1\Projekt\projekt\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\zzzz STUDIA\sem6\projektSQL\wersja_1\Projekt\projekt
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/zzzz STUDIA/sem6/projektSQL/wersja_1/Projekt/projekt/Views/Firma/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlybWFcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/zzzz STUDIA/sem6/projektSQL/wersja_1/Projekt/projekt/Views/Firma/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlybWFcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/zzzz STUDIA/sem6/projektSQL/wersja_1/Projekt/projekt/Views/Firma/GetList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlybWFcR2V0TGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/zzzz STUDIA/sem6/projektSQL/wersja_1/Projekt/projekt/Views/Konto/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29udG9cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/zzzz STUDIA/sem6/projektSQL/wersja_1/Projekt/projekt/Views/Konto/Zaloguj.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29udG9cWmFsb2d1ai5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/zzzz STUDIA/sem6/projektSQL/wersja_1/Projekt/projekt/Views/Magazyn/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFnYXp5blxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/zzzz STUDIA/sem6/projektSQL/wersja_1/Projekt/projekt/Views/Magazyn/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFnYXp5blxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/zzzz STUDIA/sem6/projektSQL/wersja_1/Projekt/projekt/Views/Magazyn/GetList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFnYXp5blxHZXRMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/zzzz STUDIA/sem6/projektSQL/wersja_1/Projekt/projekt/Views/Paczka/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFjemthXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/zzzz STUDIA/sem6/projektSQL/wersja_1/Projekt/projekt/Views/Paczka/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFjemthXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/zzzz STUDIA/sem6/projektSQL/wersja_1/Projekt/projekt/Views/Paczka/GetList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFjemthXEdldExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/zzzz STUDIA/sem6/projektSQL/wersja_1/Projekt/projekt/Views/Praca/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJhY2FcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/zzzz STUDIA/sem6/projektSQL/wersja_1/Projekt/projekt/Views/Praca/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJhY2FcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/zzzz STUDIA/sem6/projektSQL/wersja_1/Projekt/projekt/Views/Praca/GetList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJhY2FcR2V0TGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/zzzz STUDIA/sem6/projektSQL/wersja_1/Projekt/projekt/Views/Pracownik/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJhY293bmlrXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/zzzz STUDIA/sem6/projektSQL/wersja_1/Projekt/projekt/Views/Pracownik/GetList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJhY293bmlrXEdldExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/zzzz STUDIA/sem6/projektSQL/wersja_1/Projekt/projekt/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/zzzz STUDIA/sem6/projektSQL/wersja_1/Projekt/projekt/Views/WozekWidlowy/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV296ZWtXaWRsb3d5XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/zzzz STUDIA/sem6/projektSQL/wersja_1/Projekt/projekt/Views/WozekWidlowy/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV296ZWtXaWRsb3d5XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/zzzz STUDIA/sem6/projektSQL/wersja_1/Projekt/projekt/Views/WozekWidlowy/GetList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV296ZWtXaWRsb3d5XEdldExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/zzzz STUDIA/sem6/projektSQL/wersja_1/Projekt/projekt/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/zzzz STUDIA/sem6/projektSQL/wersja_1/Projekt/projekt/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/zzzz STUDIA/sem6/projektSQL/wersja_1/Projekt/projekt/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-r6sl0zbmds

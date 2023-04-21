@@ -1,0 +1,69 @@
+﻿@model IEnumerable<Paczka>
+@using projekt.Models
+
+<h2>Lista paczek:</h2>
+
+<div class="row pt-4">
+    <div class="col-6">
+    </div>
+    <div class="col-6 text-end">
+        <a asp-controller="Paczka" asp-action="Create" class="btn btn-primary">
+            Dodaj paczkę
+        </a>
+    </div>
+</div>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>
+                Wlasciciel
+            </th>
+            <th>
+                Stan
+            </th>
+            <th>
+                ID firmy
+            </th>
+            <th>
+                ID magazynu
+            </th>
+            <th>
+                ID
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var obj in Model)
+        {
+            <tr>
+                <td>
+                    @obj.Wlasciciel
+                </td>
+                <td>
+                    @obj.Stan
+                </td>
+                <td>
+                    @obj.FirmaId
+                </td>
+                <td>
+                    @obj.MagazynId
+                </td>
+                <td>
+                    @obj.Id
+                </td>
+                <td style="width:12%">
+                    <a asp-controller="Paczka" asp-action="Edit" asp-route-Id=@obj.Id>
+                        <button type="button" class="btn btn-info">Edytuj</button>
+                    </a>
+                    <a asp-controller="Paczka" asp-action="Delete" asp-route-Id=@obj.Id>
+                        <button type="button" class="btn btn-warning">Usuń</button>
+                    </a>
+                </td>
+            </tr>
+        }
+
+    </tbody>
+</table>
+
+

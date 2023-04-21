@@ -1,0 +1,69 @@
+﻿@model IEnumerable<Praca>
+@using projekt.Models
+
+<h2>Lista prac:</h2>
+
+<div class="row pt-4">
+    <div class="col-6">
+    </div>
+    <div class="col-6 text-end">
+        <a asp-controller="Praca" asp-action="Create" class="btn btn-primary">
+            Dodaj pracę
+        </a>
+    </div>
+</div>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>
+                Czas rozpoczęcia
+            </th>
+            <th>
+                Czas zakończenia
+            </th>
+            <th>
+                ID wózka
+            </th>
+            <th>
+                ID pracownika
+            </th>
+            <th>
+                ID pracy
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var obj in Model)
+        {
+            <tr>
+                <td>
+                    @obj.CzasRozpoczecia
+                </td>
+                <td>
+                    @obj.CzasZakonczenia
+                </td>
+                <td>
+                    @obj.WozekWidlowyId
+                </td>
+                <td>
+                    @obj.Konto.PracownikId
+                </td>
+                <td>
+                    @obj.Id
+                </td>
+                <td style="width:12%">
+                    <a asp-controller="Praca" asp-action="Edit" asp-route-Id=@obj.Id>
+                        <button type="button" class="btn btn-info">Edytuj</button>
+                    </a>
+                    <a asp-controller="Praca" asp-action="Delete" asp-route-Id=@obj.Id>
+                        <button type="button" class="btn btn-warning">Usuń</button>
+                    </a>
+                </td>
+            </tr>
+        }
+
+    </tbody>
+</table>
+
+

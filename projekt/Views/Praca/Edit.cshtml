@@ -1,0 +1,27 @@
+﻿@using projekt.Models
+@model Praca
+
+<h2>Zmień czas końca pracy:</h2>
+<form method="post">
+    <table>
+        <tr>
+            <td>Czas zakończenia pracy:</td>
+            <td>
+                <input asp-for="CzasZakonczenia" />
+                <span asp-validation-for="CzasZakonczenia" class="text-danger"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>
+                <input type="submit" value="Zapisz zmianę" />
+            </td>
+        </tr>
+    </table>
+</form>
+
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+    }

@@ -1,0 +1,27 @@
+﻿@using projekt.Models
+@model Praca
+
+<h2>Zarejestruj pracę na wózku:</h2>
+<form method="post">
+    <table>
+        <tr>
+            <td>ID wózka:</td>
+            <td>
+                <input asp-for="WozekWidlowyId" />
+                <span asp-validation-for="WozekWidlowyId" class="text-danger"></span>
+            </td>
+        </tr>
+            <td>&nbsp;</td>
+            <td>
+                <input type="submit" value="Dodaj" />
+            </td>
+        </tr>
+    </table>
+</form>
+
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+    }
+

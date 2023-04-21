@@ -1,0 +1,35 @@
+﻿@using projekt.Models
+@model Firma
+
+<h2>Dodaj firmę:</h2>
+<form method="post">
+    <table>
+        <tr>
+            <td>Nazwa:</td>
+            <td>
+                <input asp-for="Nazwa" />
+                <span asp-validation-for="Nazwa" class="text-danger"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>NIP:</td>
+            <td>
+                <input asp-for="NIP" />
+                <span asp-validation-for="NIP" class="text-danger"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>
+                <input type="submit" value="Dodaj" />
+            </td>
+        </tr>
+    </table>
+</form>
+
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+    }
+

@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Pracownik>
+@using projekt.Models
+
+<h2>Lista pracowników:</h2>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>
+                Imie
+            </th>
+            <th>
+                Nazwisko
+            </th>
+            <th>
+                ID
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var obj in Model)
+        {
+            <tr>
+                <td>
+                    @obj.Imie
+                </td>
+                <td>
+                    @obj.Nazwisko
+                </td>
+                <td>
+                    @obj.Id
+                </td>
+                <td style="width:12%">
+                    <a asp-controller="Pracownik" asp-action="Edit" asp-route-Id=@obj.Id>
+                        <button type="button" class="btn btn-info">Edytuj</button>
+                    </a>
+                    <a asp-controller="Pracownik" asp-action="Delete" asp-route-Id=@obj.Id>
+                        <button type="button" class="btn btn-warning">Usuń</button>
+                    </a>
+                </td>
+            </tr>
+        }
+
+    </tbody>
+</table>
+
+

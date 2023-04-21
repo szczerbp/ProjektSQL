@@ -1,0 +1,35 @@
+﻿@using projekt.Models
+@model WozekWidlowy
+
+<h2>Edytuj dane wózka widłowego:</h2>
+<form method="post">
+    <table>
+        <tr>
+            <td>Data ostatniego serwisu:</td>
+            <td>
+                <input asp-for="DataOstatniegoSerwisu" />
+                <span asp-validation-for="DataOstatniegoSerwisu" class="text-danger"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>ID magazynu:</td>
+            <td>
+                <input asp-for="MagazynId" />
+                <span asp-validation-for="MagazynId" class="text-danger"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>
+                <input type="submit" value="Zapisz zmiany" />
+            </td>
+        </tr>
+    </table>
+</form>
+
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+    }
+

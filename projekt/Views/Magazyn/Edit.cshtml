@@ -1,0 +1,42 @@
+﻿@using projekt.Models
+@model Magazyn
+
+<h2>Edytuj dane magazynu:</h2>
+<form method="post">
+    <table>
+        <tr>
+            <td>Miasto:</td>
+            <td>
+                <input asp-for="Miasto" />
+                <span asp-validation-for="Miasto" class="text-danger"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>Powierzchnia:</td>
+            <td>
+                <input asp-for="Powierzchnia" />
+                <span asp-validation-for="Powierzchnia" class="text-danger"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>Pojemność paczek:</td>
+            <td>
+                <input asp-for="PojemnoscPaczek" />
+                <span asp-validation-for="PojemnoscPaczek" class="text-danger"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>
+                <input type="submit" value="Zapisz zmiany" />
+            </td>
+        </tr>
+    </table>
+</form>
+
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+    }
+

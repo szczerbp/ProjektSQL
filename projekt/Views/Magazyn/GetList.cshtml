@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Magazyn>
+@using projekt.Models
+
+<h2>Lista magazynów:</h2>
+
+<div class="row pt-4">
+    <div class="col-6">
+    </div>
+    <div class="col-6 text-end">
+        <a asp-controller="Magazyn" asp-action="Create" class="btn btn-primary">
+            Dodaj magazyn
+        </a>
+    </div>
+</div>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>
+                Miasto
+            </th>
+            <th>
+                Powierzchnia
+            </th>
+            <th>
+                Pojemność paczek
+            </th>
+            <th>
+                ID
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var obj in Model)
+        {
+            <tr>
+                <td>
+                    @obj.Miasto
+                </td>
+                <td>
+                    @obj.Powierzchnia
+                </td>
+                <td>
+                    @obj.PojemnoscPaczek
+                </td>
+                <td>
+                    @obj.Id
+                </td>
+                <td style="width:12%">
+                    <a asp-controller="Magazyn" asp-action="Edit" asp-route-Id=@obj.Id>
+                        <button type="button" class="btn btn-info">Edytuj</button>
+                    </a>
+                    <a asp-controller="Magazyn" asp-action="Delete" asp-route-Id=@obj.Id>
+                        <button type="button" class="btn btn-warning">Usuń</button>
+                    </a>
+                </td>
+            </tr>
+        }
+
+    </tbody>
+</table>
+
+
